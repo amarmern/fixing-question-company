@@ -26,8 +26,8 @@ const Buttons = (props) => {
   };
   return (
     <>
-      <Button onClick={() => handleChange("incr")}>incr</Button>
-      <Button onClick={() => handleChange("decr")}>Decrease</Button>
+      <Button handleChange={() => handleChange("incr")}>incr</Button>
+      <Button handleChange={() => handleChange("decr")}>Decrease</Button>
     </>
   );
 };

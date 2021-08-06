@@ -3,11 +3,9 @@ import "./styles.css";
 
 const Button = (props) => {
   //const [state , setState] = React.useState("")
-  const handleChange = () => {
-    console.log("event");
-  };
+
   return (
-    <button className="click-button" handleChange={handleChange}>
+    <button className="click-button" onClick={props.handleChange}>
       {props.children}
     </button>
   );
